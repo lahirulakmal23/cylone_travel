@@ -4,10 +4,10 @@ import { ChevronDown, Menu } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <header className="w-full bg-white shadow-sm border-b border-gray-100 fixed">
-      <div className=" mx-12 px-6 lg:px-10">
+    <header className=" bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50  ">
+      <div className=" lg:mx-12 px-6 lg:px-10 sm:mx-6">
         
-        <nav className="flex items-center justify-between h-20">
+        <nav className="flex items-center justify-between h-20   ">
 
           {/* LEFT SIDE - LOGO */}
           <div className="flex items-center">

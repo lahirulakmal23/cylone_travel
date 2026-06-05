@@ -66,8 +66,8 @@ const destinations: Destination[] = [
 
 const ExploreDestinations = () => {
   return (
-    <section className="py-16 sm:py-20 bg-white">
-      <div className="lg:mx-12   px-4 sm:px-6 lg:px-8 ">
+    <section className="py-16 sm:py-20 bg-white ">
+      <div className="lg:mx-12   px-4 sm:px-6 lg:px-8  ">
 
         {/* HEADER */}
         <div className="relative mb-10 md:mb-14 items-center text-center ">
