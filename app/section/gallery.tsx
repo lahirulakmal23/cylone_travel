@@ -61,7 +61,7 @@ export default function GallerySection() {
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="group relative overflow-hidden rounded-xl cursor-pointer"
+              className="group relative overflow-hidden rounded-md cursor-pointer"
             >
               <div className="relative aspect-[4/5]">
 

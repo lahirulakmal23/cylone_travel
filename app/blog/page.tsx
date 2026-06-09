@@ -178,7 +178,7 @@ const BlogPage = () => {
 
       {/* ── Featured Post ────────────────────────────────────────────────── */}
       <section className="mx-16 px-6 mb-14">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-2xl overflow-hidden shadow-xl bg-white">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-md overflow-hidden shadow-xl bg-white">
           {/* Left — Image */}
           <div className="relative h-72 sm:h-96 lg:h-full min-h-[380px]">
             <Image
@@ -243,7 +243,7 @@ const BlogPage = () => {
             {filteredCards.map((post) => (
               <article
                 key={post.id}
-                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col group"
+                className="bg-white rounded-md overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col group"
               >
                 {/* Card Image */}
                 <div className="relative h-52 overflow-hidden">

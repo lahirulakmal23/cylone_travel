@@ -106,7 +106,7 @@ const ExploreDestinations = () => {
           {destinations.map((destination: Destination) => (
             <div
               key={destination.id}
-              className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+              className="group relative overflow-hidden rounded-md shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
             >
 
               {/* IMAGE CONTAINER */}
