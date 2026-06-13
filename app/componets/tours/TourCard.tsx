@@ -8,7 +8,7 @@ interface Props {
 
 export default function TourCard({ tour }: Props) {
   return (
-    <article className="group overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+    <article className="group overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg ">
       <div className="relative h-64 overflow-hidden">
         <Image
           src={tour.image}
