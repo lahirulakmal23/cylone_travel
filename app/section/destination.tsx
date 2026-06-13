@@ -3,71 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-type Destination = {
-  id: number;
-  title: string;
-  description: string;
-  label: string;
-  image: string;
-};
-
-const destinations: Destination[] = [
-  {
-    id: 1,
-    title: "Sigiriya",
-    label: "Ancient Fortress",
-    description:
-      "Discover the ancient rock fortress surrounded by breathtaking landscapes and history.",
-    image:"/images/sigiriya.jpg",
-  },
-  {
-    id: 2,
-    title: "Ella",
-    label: "Mountain Retreat",
-    description:
-      "Experience scenic train rides, tea plantations, waterfalls, and mountain adventures.",
-    image:"/images/nine-arch.jpg"
-      ,
-  },
-  {
-    id: 3,
-    title: "Mirissa",
-    label: "Beaches",
-    description:
-      "Relax on tropical beaches and enjoy whale watching on Sri Lanka’s southern coast.",
-    image:"/images/beaches.jpeg"
-      ,
-  },
-  {
-    id: 4,
-    title: "Kandy",
-    label: "Cultural Capital",
-    description:
-      "Explore Sri Lanka’s cultural capital filled with temples, lakes, and traditions.",
-    image:"/images/dalada_maligiwa.webp",
-  },
-  {
-    id: 5,
-    title: "Yala National Park",
-    label: "Wildlife",
-    description:
-      "Witness incredible wildlife including elephants and leopards in natural habitats.",
-    image:"/images/wildlife.jpg",
-  },
-  {
-    id: 6,
-    title: "Nuwara Eliya",
-    label: "Hill Country",
-    description:
-      "Escape into cool climates, rolling tea hills, and colonial charm in the hill country.",
-    image:"/images/nuwara-eliya-3.jpg",
-  },
-];
+import { destinations } from "../data/detination";
 
 const ExploreDestinations = () => {
   return (
-    <section className="py-16 sm:py-20 bg-white">
-      <div className="lg:mx-12   px-4 sm:px-6 lg:px-8 ">
+    <section className="py-16 sm:py-20 bg-white ">
+      <div className="lg:mx-12   px-4 sm:px-6 lg:px-8  ">
 
         {/* HEADER */}
         <div className="relative mb-10 md:mb-14 items-center text-center ">
@@ -91,7 +32,7 @@ const ExploreDestinations = () => {
           {/* Desktop View All */}
           <div className="hidden md:block absolute right-0 top-6">
             <Link
-              href="/destinations"
+              href="/destination"
               className="inline-flex items-center gap-2 text-[#007A78] font-semibold hover:gap-3 transition-all duration-300"
             >
               View all destinations
@@ -106,7 +47,7 @@ const ExploreDestinations = () => {
           {destinations.map((destination: Destination) => (
             <div
               key={destination.id}
-              className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+              className="group relative overflow-hidden rounded-md shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
             >
 
               {/* IMAGE CONTAINER */}
