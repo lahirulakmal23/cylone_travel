@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MapPin, Clock3, Star } from "lucide-react";
 import { Tour } from "../../data/tour";
 
@@ -51,13 +52,20 @@ export default function TourCard({ tour }: Props) {
           </span>
         </div>
 
-        <div className="flex items-center justify-between  pt-2">
+        <div className="mb-4 flex items-center justify-between pt-2">
           <span className="text-gray-500">From</span>
 
           <span className="text-xl font-bold text-orange-500">
             ${tour.price}
           </span>
         </div>
+
+        <Link
+          href={`/tour/${tour.id}`}
+          className="block w-full rounded-md bg-lime-600 py-3 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-lime-700"
+        >
+          Book Tour
+        </Link>
       </div>
     </article>
   );
