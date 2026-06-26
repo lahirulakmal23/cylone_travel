@@ -78,7 +78,8 @@ export default function ToursPage() {
               activity={activity} setActivity={setActivity}
               onReset={handleReset}
             />
-
+          
+          
             <div>
               <h2 className="mb-8 text-xl font-bold text-slate-900">
                 {filteredTours.length} Tour{filteredTours.length !== 1 ? "s" : ""} Found

@@ -2,9 +2,11 @@
 import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 
+
 const Navbar = () => {
   return (
     <header className=" bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50  ">
+
       <div className=" lg:mx-12 px-6 lg:px-10 sm:mx-6">
         
         <nav className="flex items-center justify-between h-20   ">
@@ -43,28 +45,28 @@ const Navbar = () => {
               <div className="absolute top-10 left-0 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 bg-white shadow-lg rounded-lg w-52 py-3 border border-gray-100">
                 
                 <Link
-                  href="/tours"
+                  href="/destination"
                   className="block px-5 py-2 hover:bg-gray-50 hover:text-[#007A78]"
                 >
                   Beaches
                 </Link>
 
                 <Link
-                  href="#"
+                  href="destination"
                   className="block px-5 py-2 hover:bg-gray-50 hover:text-[#007A78]"
                 >
                   Mountains
                 </Link>
 
                 <Link
-                  href="#"
+                  href="destination"
                   className="block px-5 py-2 hover:bg-gray-50 hover:text-[#007A78]"
                 >
                   Wildlife
                 </Link>
 
                 <Link
-                  href="#"
+                  href="destination"
                   className="block px-5 py-2 hover:bg-gray-50 hover:text-[#007A78]"
                 >
                   Cultural Sites

@@ -61,7 +61,7 @@ export default function TourCard({ tour }: Props) {
         </div>
 
         <Link
-          href={`/tour/${tour.id}`}
+          href={`/tours/${tour.id}`}
           className="block w-full rounded-md bg-lime-600 py-3 text-center text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-lime-700"
         >
           Book Tour
