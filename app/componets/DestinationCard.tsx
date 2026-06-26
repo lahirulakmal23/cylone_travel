@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { destinations, filters } from "../data/detination";
- import Link from "next/link";
+import Link from "next/link";
 
 export default function DestinationCard() {
   const [active, setActive] = useState("all");
